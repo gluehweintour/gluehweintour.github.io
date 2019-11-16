@@ -20,8 +20,13 @@ body {
   }
 
   h1 {
-    color: $wine;
     font-family: 'Kite One', sans-serif;
     font-size: 2rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: $wine;
   }
 }
