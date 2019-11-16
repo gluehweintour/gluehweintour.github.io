@@ -1,0 +1,27 @@
+title: Glühweintour
+url: https://www.gluehweintour.de
+description: "Gesellige Glühweintouren in und um München"
+lang: de_DE
+author: Manuel Schächinger
+author: Ignaz Schlennert
+permalink: /:year-:title
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      path: "."
+      type: "drafts"
+    values:
+      sitemap: false
+
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
+sass:
+  style: compressed

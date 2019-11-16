@@ -1,0 +1,27 @@
+body {
+  
+  font-family: $font-clearsans-bk;
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+  
+  .page {
+    @include outer-container;
+
+    > div {
+      @include media-columns(12);
+    }
+  }
+
+  a,
+  a:active,
+  a:visited {
+    color: $wine;
+  }
+
+  h1 {
+    color: $wine;
+    font-family: 'Kite One', sans-serif;
+    font-size: 2rem;
+  }
+}

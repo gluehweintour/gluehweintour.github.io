@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="{{ page.lang | default: 'de' }}">
+  <meta charset="UTF-8">
+  <title>Glühweintouren</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="author" content="Manuel Schächinger">
+  <meta name="author" content="Ignaz Schlennert">
+  <meta name="description" content="Glühweintouren in und um München">
+  <link href="https://fonts.googleapis.com/css?family=Kite+One|Open+Sans" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="page{% if page.class %} page-{{ page.class }}{% endif %}">
+    <div>
+      {{ content }}
+    </div>
+  </main>
+</body>
+
+</html>
