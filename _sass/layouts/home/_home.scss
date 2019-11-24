@@ -1,10 +1,33 @@
 .page.page-home {
-  .logo {
-    padding: 1.75rem 1rem;
-  }
-
+  .logo,
   .footer {
     background-color: $white-transparent;
+    border: 1px solid $gray-middle;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  header {
+    border-bottom: none;
+
+    .logo {
+      border-top-width: 0;
+      padding: 1.75rem 1rem;
+    }
+  }
+  
+  .footer {
+    border-bottom-width: 0;
+    background-color: $white-transparent;
+  }
+
+
+  @include grid-media($mobile-only) {
+    .footer,
+    .logo {
+      width: 100%;
+    }
   }
 
   main {
@@ -28,6 +51,16 @@
         right: 0;
         background-image: url('/assets/images/feuerzangenbowle.jpg');
         width: 25%;
+      }
+
+      @include grid-media($mobile-only) {
+        &.image-left {
+          display: none;
+        }
+
+        &.image-right {
+          width: 100%;
+        }
       }
     }
   }

@@ -1,4 +1,15 @@
 .page.page-imprint,
 .page.page-privacy {
   @include outer-container;
+
+  main,
+  .footer {
+    @include media-columns(12);
+  }
+
+  main ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
 }

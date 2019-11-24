@@ -14,7 +14,7 @@ Jachenauer Str. 17
 
 ## Kontakt
 
-[mail@gluehweintour.de](mailto:mail@gluehweintour.de)
+[kontakt@gluehweintour.de](mailto:kontakt@gluehweintour.de)
 
 ## Haftungsausschluss
 
