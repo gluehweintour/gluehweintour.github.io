@@ -4,6 +4,22 @@ navigation:
     sub:
       - title: Innenstadt
         url: /touren/innenstadt/
+      - title: Nord
+        url: /touren/nord/
+      - title: Bogenhausen - Neuhausen
+        url: /touren/bogenhausen-neuhausen/
+      - title: West
+        url: /touren/west/
+      - title: Westend
+        url: /touren/westend/
+      - title: Ost
+        url: /touren/ost/
+      - title: Salzburg
+        url: /touren/salzburg/
+      - title: Nürnberg
+        url: /touren/nuernberg/
+      - title: Regensburg
+        url: /touren/regensburg/
   - title: Termine
     url: /termine/
   - title: Kontakt
