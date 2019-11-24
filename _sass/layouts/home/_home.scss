@@ -1,10 +1,42 @@
 .page.page-home {
-  h1 {
-    margin: 15% 0 2rem;
-    text-align: center;
+  .logo {
+    padding: 1.75rem 1rem;
   }
 
-  p {
+  .footer {
+    background-color: $white-transparent;
+  }
+
+  main {
+    div {
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: -1;
+      
+      &.image-left {
+        left: 0;
+        background-image: url('/assets/images/igi-und-manuel.jpg');
+        width: 75%;
+      }
+      
+      &.image-right {
+        right: 0;
+        background-image: url('/assets/images/feuerzangenbowle.jpg');
+        width: 25%;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
     text-align: center;
   }
 }

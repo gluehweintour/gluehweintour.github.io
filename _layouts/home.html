@@ -12,12 +12,12 @@
   <link href="/assets/css/style.css" rel="stylesheet">
 </head>
 
-<body class="page{% if page.class %} page-{{ page.class }}{% endif %}">
-  {% include header.html %}
-  <main class="main">
-    {{ content }}
+<body>
+  <main class="page{% if page.class %} page-{{ page.class }}{% endif %}">
+    <div>
+      {{ content }}
+    </div>
   </main>
-  {% include footer.html %}
 </body>
 
 </html>

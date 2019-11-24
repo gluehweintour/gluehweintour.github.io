@@ -1,8 +1,31 @@
 body {
+  header {
+    .logo {
+      background-color: $white-transparent;
+      padding: 1rem;
+      z-index: 1000;
+
+      span {
+        display: block;
+        font-family: 'Kite One', sans-serif;
+        text-align: center;
+
+        &.title {
+          color: $wine;
+          font-size: 2rem;
+        }
+
+        &.slogan {
+          font-size: 0.875rem;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
   
   font-family: $font-clearsans-bk;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: 0;
   padding: 0;
   
   .page {
@@ -22,6 +45,7 @@ body {
   h1 {
     font-family: 'Kite One', sans-serif;
     font-size: 2rem;
+    font-weight: normal;
   }
 
   h1,
@@ -29,4 +53,9 @@ body {
   h3 {
     color: $wine;
   }
+}
+
+html,
+body {
+  min-height: 100%;
 }
