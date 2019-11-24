@@ -1,8 +1,7 @@
 body {
-  
   font-family: $font-clearsans-bk;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: 0;
   padding: 0;
 
   a,
@@ -12,8 +11,9 @@ body {
   }
 
   h1 {
-    font-family: 'Kite One', sans-serif;
+    font-family: $font-clearsans;
     font-size: 2rem;
+    font-weight: normal;
   }
 
   h1,
@@ -23,6 +23,6 @@ body {
   }
 
   .page {
-    background-color: red;
+    
   }
 }
