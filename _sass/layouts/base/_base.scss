@@ -4,14 +4,6 @@ body {
   font-size: 1rem;
   margin: 1rem 0;
   padding: 0;
-  
-  .page {
-    @include outer-container;
-
-    > div {
-      @include media-columns(12);
-    }
-  }
 
   a,
   a:active,
@@ -28,5 +20,9 @@ body {
   h2,
   h3 {
     color: $wine;
+  }
+
+  .page {
+    background-color: red;
   }
 }

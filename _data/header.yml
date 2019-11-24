@@ -1,0 +1,10 @@
+navigation:
+  - title: Touren
+    url: /touren/
+    sub:
+      - title: Innenstadt
+        url: /touren/innenstadt/
+  - title: Termine
+    url: /termine/
+  - title: Kontakt
+    url: /kontakt/

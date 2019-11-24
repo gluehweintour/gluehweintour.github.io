@@ -1,3 +1,6 @@
 @import 'base/base';
-@import 'home/home';
-@import 'imprint/imprint';
+
+.page {
+  @import 'home/home';
+  @import 'imprint/imprint';
+}

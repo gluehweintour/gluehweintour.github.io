@@ -1,0 +1,14 @@
+.logo {
+  span {
+    display: block;
+  }
+
+  &__title {
+    color: $wine;
+    font-size: 2rem;
+  }
+
+  &__slogan {
+    font-size: 0.875rem;
+  }
+}

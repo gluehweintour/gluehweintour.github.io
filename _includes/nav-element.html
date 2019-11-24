@@ -1,0 +1,16 @@
+<li {% if page.url contains include.element.url %}class="active" {% endif %}>
+  <a href="{{ base | append: include.element.url }}" {% if include.element.class %} class="{{ include.element.class }}"
+    {% endif %}>
+    {% if include.element.icon %}
+    {% include glyphicons.html icon=include.element.icon %}
+    {% endif %}
+    {{ include.element.title }}</a>
+  {% if include.element.sub %}
+  {% comment %}{% include glyphicons.html icon="221-chevron-down" %}{% endcomment %}
+  <ul>
+    {% for sub in include.element.sub %}
+    {% include nav-element.html element=sub %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</li>

@@ -1,10 +1,3 @@
-.page.page-home {
-  h1 {
-    margin: 15% 0 2rem;
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-  }
+&-home {
+  @include outer-container;
 }

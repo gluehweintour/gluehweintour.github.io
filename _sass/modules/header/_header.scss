@@ -1,0 +1,9 @@
+.header {
+  @import 'logo';
+  @import 'navigation';
+
+  &__container {
+    @include outer-container;
+  }
+
+}
