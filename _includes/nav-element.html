@@ -6,7 +6,7 @@
     {% endif %}
     {{ include.element.title }}</a>
   {% if include.element.sub %}
-  {% comment %}{% include glyphicons.html icon="221-chevron-down" %}{% endcomment %}
+  {% include glyphicons.html icon="221-chevron-down" %}
   <ul>
     {% for sub in include.element.sub %}
     {% include nav-element.html element=sub %}

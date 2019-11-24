@@ -2,8 +2,20 @@
   @import 'logo';
   @import 'navigation';
 
+  border-bottom: 1px solid $gray;
+  padding: 0.5rem 0;
+
   &__container {
     @include outer-container;
-  }
 
+    @include clearfix;
+
+    .logo {
+      float: left;
+    }
+
+    .navigation {
+      float: right;
+    }
+  }
 }
