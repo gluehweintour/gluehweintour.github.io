@@ -43,4 +43,8 @@ ul.navigation {
   position: absolute;
   right: 1.25rem;
   top: 1.75rem;
+
+  @include grid-media($tablet) {
+    display: none;
+  }
 }
