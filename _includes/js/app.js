@@ -6,6 +6,7 @@ window.glueh = {};
 {% include js/cookie.js %}
 {% include js/ga.js %}
 {% include js/data.js %}
+{% include js/navigation.js %}
 
 window.glueh.init = function () {
   this.checkLinks();
@@ -13,6 +14,7 @@ window.glueh.init = function () {
   this.ga.init();
   this.ga.activate();
   this.data.setYear();
+  this.navigation.init();
 };
 
 window.glueh.init = window.glueh.init.bind(window.glueh);

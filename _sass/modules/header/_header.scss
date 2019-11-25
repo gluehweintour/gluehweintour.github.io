@@ -4,25 +4,39 @@
 
   background-color: $white-transparent;
   border-bottom: 1px solid $gray-middle;
-  height: 6.375rem;
   left: 0;
   padding: 1rem 0;
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1500;
 
   &__container {
     @include outer-container;
     @include clearfix;
 
     .logo {
-      float: left;
       padding-left: 1.25rem;
     }
 
     ul.navigation {
-      float: right;
+      margin: 1rem 0 0 0;
       padding-right: 1.25rem;
+    }
+  }
+
+  @include grid-media($tablet) {
+    height: 6.375rem;
+
+    &__container {
+      .logo {
+        float: left;
+      }
+
+      ul.navigation {
+        float: right;
+        margin: 2.75rem 0 0 0;
+      }
     }
   }
 }
