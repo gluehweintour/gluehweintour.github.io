@@ -1,0 +1,77 @@
+.app ul.socials {
+  color: $gray;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      margin: 0.5em;
+      position: relative;
+
+      &::before {
+        background-color: $white-transparent;
+        border-radius: 50%;
+        content: '';
+        height: 1.75em;
+        left: calc(50% - 0.875em);
+        position: absolute;
+        top: calc(50% - 0.95em);
+        transition: background 0.333s ease-in-out;
+        width: 1.75em;
+      }
+
+      &.email,
+      &.call {
+        color: $mail;
+      }
+      &.github {
+        color: $github;
+      }
+      &.facebook {
+        color: $facebook;
+      }
+      &.instagram {
+        color: $instagram;
+      }
+      &.linked-in {
+        color: $linked-in;
+      }
+      &.twitter {
+        color: $twitter;
+      }
+      &.xing {
+        color: $xing;
+        top: -0.0625em;
+      }
+      
+      &:hover {
+        border-bottom-color: transparent;
+        color: $white !important;
+
+        &.email::before,
+        &.call::before {
+          background-color: $mail;
+        }
+        &.github::before {
+          background-color: $github;
+        }
+        &.facebook::before {
+          background-color: $facebook;
+        }
+        &.instagram::before {
+          background-color: $instagram;
+        }
+        &.linked-in::before {
+          background-color: $linked-in;
+        }
+        &.twitter::before {
+          background-color: $twitter;
+        }
+        &.xing::before {
+          background-color: $xing;
+        }
+      }
+    }
+  }
+}
