@@ -1,28 +1,4 @@
-body {
-  font-family: $font-clearsans-bk;
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-
-  a,
-  a:active,
-  a:visited {
-    color: $wine;
-  }
-
-  h1 {
-    font-family: $font-clearsans;
-    font-size: 2rem;
-    font-weight: normal;
-  }
-
-  h1,
-  h2,
-  h3 {
-    color: $wine;
-  }
-
-  .page {
-    
-  }
-}
+@import "body";
+@import "fonts";
+@import "icons";
+@import "links";

@@ -1,0 +1,13 @@
+---
+layout: simple
+class: tour
+title: Touren
+---
+
+<p>Völlig überfordert von so vielen Möglichkeiten? Wir haben eine passende Tour für dich:</p>
+
+<ul class="tour__list">
+  {% for element in site.data.header.navigation[0].sub %}
+  {% include nav-element.html element=element %}
+  {% endfor %}
+</ul>

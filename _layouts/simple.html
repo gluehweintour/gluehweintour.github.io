@@ -1,0 +1,12 @@
+---
+layout: base
+---
+{% include header.html %}
+<main class="page page__{{ page.class }} page--simple">
+  <div class="page__container">
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+  </div>
+</main>
+{% include footer.html %}

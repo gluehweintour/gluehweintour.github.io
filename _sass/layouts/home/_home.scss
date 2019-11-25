@@ -1,3 +1,9 @@
-&-home {
+&__home {
   @include outer-container;
+
+  padding-top: 8.375rem;
+
+  .home__container {
+    @include media-columns(12);
+  }
 }

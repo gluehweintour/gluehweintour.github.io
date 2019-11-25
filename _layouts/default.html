@@ -1,30 +1,8 @@
 ---
-layout: compress
+layout: base
 ---
-<!DOCTYPE html>
-<html>
-
-<head lang="{{ page.lang | default: 'de' }}">
-  <meta charset="UTF-8">
-  <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}Glühweintour</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <meta name="author" content="Manuel Schächinger">
-  <meta name="author" content="Ignaz Schlennert">
-  <meta name="description" content="Glühweintouren in und um München">
-  <link href="https://fonts.googleapis.com/css?family=Kite+One|Open+Sans" rel="stylesheet">
-  <link href="/assets/css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  {% include header.html %}
-  <main class="page{% if page.class %} page-{{ page.class }}{% endif %}">
-    <div>
-      <h1>{{ page.title }}</h1>
-
-      {{ content }}
-    </div>
-  </main>
-  {% include footer.html %}
-</body>
-
-</html>
+{% include header.html %}
+<main class="page{% if page.class %} page__{{ page.class }}{% endif %}">
+  {{ content }}
+</main>
+{% include footer.html %}

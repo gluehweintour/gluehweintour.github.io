@@ -1,14 +1,22 @@
-footer.footer {
-  bottom: 0;
-  left: 0;
-  padding: 0.5rem 1.25rem;
-  position: absolute;
-  right: 0;
-  text-align: center;
+footer {
+  border-top: 1px solid $gray-middle;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
 
-  p,
-  ul {
-    display: inline-block;
+.footer {
+  @include outer-container;
+
+  &__content {
+    @include media-columns(12, 8, 9);
+
+    ul {
+      display: block;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 
   ul {
@@ -18,7 +26,37 @@ footer.footer {
 
     li {
       display: inline-block;
-      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  &__socials {
+    @include media-columns(12, 4, 3);
+
+    .socials {
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+      text-align: right;
+    }
+  }
+
+  @include grid-media($tablet) {
+    &__content {
+      @include grid-shift(-4);
+    }
+
+    &__socials {
+      @include grid-shift(8);
+    }
+  }
+
+  @include grid-media($desktop) {
+    &__content {
+      @include grid-shift(-3);
+    }
+
+    &__socials {
+      @include grid-shift(9);
     }
   }
 }

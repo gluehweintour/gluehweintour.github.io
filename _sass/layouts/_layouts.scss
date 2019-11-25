@@ -1,6 +1,6 @@
 @import 'base/base';
 
 .page {
+  @import 'simple';
   @import 'home/home';
-  @import 'imprint/imprint';
 }

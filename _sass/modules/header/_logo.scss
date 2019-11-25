@@ -1,15 +1,26 @@
 .logo {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+
   span {
     display: block;
+    font-family: 'Kite One', $font-clearsans;
   }
 
   &__title {
     color: $wine;
-    font-family: 'Kite One', $font-clearsans;
     font-size: 2rem;
   }
 
   &__slogan {
+    color: $black;
     font-size: 0.875rem;
+    letter-spacing: 3px;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }

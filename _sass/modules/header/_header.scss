@@ -2,20 +2,27 @@
   @import 'logo';
   @import 'navigation';
 
-  border-bottom: 1px solid $gray;
-  padding: 0.5rem 0;
+  background-color: $white-transparent;
+  border-bottom: 1px solid $gray-middle;
+  height: 6.375rem;
+  left: 0;
+  padding: 1rem 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 
   &__container {
     @include outer-container;
-
     @include clearfix;
 
     .logo {
       float: left;
+      padding-left: 1.25rem;
     }
 
-    .navigation {
+    ul.navigation {
       float: right;
+      padding-right: 1.25rem;
     }
   }
 }

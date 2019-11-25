@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: simple
 title: Impressum
 class: imprint
 ---
-# {{ page.title }}
-
 ## Eigentümer nach § 5 TMG
 
 Manuel Schächinger & Ignaz Schlennert
@@ -14,7 +12,7 @@ Jachenauer Str. 17
 
 ## Kontakt
 
-[mail@gluehweintour.de](mailto:mail@gluehweintour.de)
+[kontakt@gluehweintour.de](mailto:kontakt@gluehweintour.de)
 
 ## Haftungsausschluss
 

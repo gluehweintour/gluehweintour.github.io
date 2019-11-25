@@ -1,0 +1,12 @@
+&--simple {
+  @include outer-container;
+
+  .page__container {
+    @include media-columns(12);
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 0 0 1rem 1.25rem;
+  }
+}

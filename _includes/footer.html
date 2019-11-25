@@ -1,11 +1,19 @@
-<footer class="footer">
-  <p>&copy; {{ site.time | date: '%Y' }} gluehweintour.de</p>
-  <ul>
-    <li>
-      <a href="/impressum">Impressum</a>
-    </li>
-    <li>
-      <a href="/datenschutz">Datenschutz</a>
-    </li>
-  </ul>
+<footer role="detailinfo">
+  <div class="footer">
+    <div class="footer__socials">
+      {% include socials.html %}
+    </div>
+
+    <div class="footer__content">
+      <ul class="footer__links">
+        {% for element in site.data.footer.navigation %}
+        <li>
+          <a href="{{ element.url }}">{{ element.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="footer__copyright">&copy; {{ site.time | date: '%Y' }} <a
+          href="https://www.gluehweintour.de">gluehweintour.de</a>. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
 </footer>
