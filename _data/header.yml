@@ -2,17 +2,17 @@ navigation:
   - title: Touren
     url: /touren/
     sub:
-      - title: Innenstadt
+      - title: München Innenstadt
         url: /touren/muenchen-innenstadt/
-      - title: Nord
+      - title: München Nord
         url: /touren/muenchen-nord/
-      - title: Bogenhausen - Neuhausen
+      - title: München Bogenhausen - Neuhausen
         url: /touren/muenchen-bogenhausen-neuhausen/
-      - title: West
+      - title: München West
         url: /touren/muenchen-west/
-      - title: Westend
+      - title: München Westend
         url: /touren/muenchen-westend/
-      - title: Ost
+      - title: München Ost
         url: /touren/muenchen-ost/
       - title: Salzburg
         url: /touren/salzburg/

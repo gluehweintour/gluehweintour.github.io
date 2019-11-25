@@ -9,6 +9,8 @@ permalink: /:year-:title
 plugins:
   - jekyll-seo-tag
 
+ga: UA-153198709-1
+
 markdown: kramdown
 
 defaults:
