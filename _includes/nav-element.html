@@ -1,4 +1,7 @@
-<li {% if page.url contains include.element.url %}class="active" {% endif %}>
+{% assign classList = '' %}
+{% if page.url contains include.element.url %}{% assign classList = classList | append: 'item--active ' %}{% endif %}
+{% if include.element.separate %}{% assign classList = classList | append: 'item--separate ' %}{% endif %}
+<li{% if classList %} class="{{ classList }}" {% endif %}>
   <a href="{{ base | append: include.element.url }}" {% if include.element.class %} class="{{ include.element.class }}"
     {% endif %}>
     {% if include.element.icon %}
@@ -13,4 +16,4 @@
     {% endfor %}
   </ul>
   {% endif %}
-</li>
+  </li>
