@@ -30,4 +30,17 @@ ul.navigation {
     position: absolute;
     width: 8rem;
   }
+
+  @include grid-media($mobile-only) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  color: $wine;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.75rem;
 }

@@ -4,6 +4,9 @@
       <span class="logo__title">Glühweintour</span>
       <span class="logo__slogan">In und um München</span>
     </a>
+    <span class="mobile-menu">
+      {% include glyphicons.html icon="949-circle-menu" %}
+    </span>
     <ul class="navigation">
       {% for element in site.data.header.navigation %}
       {% include nav-element.html element=element %}

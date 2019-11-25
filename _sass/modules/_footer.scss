@@ -40,6 +40,13 @@ footer {
     }
   }
 
+  @include grid-media($mobile-only) {
+    &__socials .socials {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
   @include grid-media($tablet) {
     &__content {
       @include grid-shift(-4);
