@@ -1,0 +1,59 @@
+bogenhausen:
+  stops: 4
+  minParticipants: 6
+  transport: 1
+  meetingPoint: Bogenhausen
+innenstadt:
+  stops: 5
+  minParticipants: 6
+  transport: 0
+  meetingPoint: Odeonsplatz
+nord:
+  stops: 5
+  minParticipants: 8
+  transport: 2
+  meetingPoint: Hauptbahnhof
+ost:
+  stops: 5
+  minParticipants: 6
+  transport: 1
+  meetingPoint: Isartor
+west:
+  stops: 4
+  minParticipants: 6
+  transport: 1
+  meetingPoint: Großhadern
+westend:
+  stops: 3+
+  minParticipants: 
+  transport: 
+  meetingPoint: 
+
+
+navigation:
+  - title: Touren
+    url: /touren/
+    sub:
+      - title: München Bogenhausen – Neuhausen
+        url: /touren/muenchen-bogenhausen-neuhausen/
+      - title: München Innenstadt
+        url: /touren/muenchen-innenstadt/
+      - title: München Nord
+        url: /touren/muenchen-nord/
+      - title: München Ost
+        url: /touren/muenchen-ost/
+      - title: München West
+        url: /touren/muenchen-west/
+      - title: München Westend
+        url: /touren/muenchen-westend/
+        separate: true
+      - title: Nürnberg
+        url: /touren/nuernberg/
+      - title: Regensburg
+        url: /touren/regensburg/
+      - title: Salzburg
+        url: /touren/salzburg/
+  - title: Termine
+    url: /termine/
+  - title: Kontakt
+    url: /kontakt/

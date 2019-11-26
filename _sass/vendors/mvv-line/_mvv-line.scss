@@ -1,0 +1,91 @@
+// MVV Line 1.0
+// https://www.schaechinger.com/projekte/#mvv-line
+// Copyright 2019 Manuel Schaechinger
+// MIT License
+
+.mvv-line {
+  @import 'colors';
+
+  border: 0.15625em solid $borderColor;
+  color: $textColor;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0.46875em;
+  min-width: 3.125em;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:not(:last-of-type) {
+    margin-right: 0.46875em;
+  }
+
+  &--contrast {
+    border-color: $textColor;
+  }
+
+  &--bus {
+    background-color: $bus;
+  }
+  &--tram {
+    background-color: $tram;
+  }
+
+  &[class*="--s"] {
+    border-radius: 1.5625em;
+  }
+  &--s {
+    background-color: $s;
+  }
+  &--s1 {
+    background-color: $s1;
+  }
+  &--s2 {
+    background-color: $s2;
+  }
+  &--s3 {
+    background-color: $s3;
+  }
+  &--s4 {
+    background-color: $s4;
+  }
+  &--s6 {
+    background-color: $s6;
+  }
+  &--s7 {
+    background-color: $s7;
+  }
+  &--s8 {
+    background-color: $s8;
+    color: $s8Text;
+  }
+
+  &--u {
+    background-color: $u;
+  }
+  &--u1 {
+    background-color: $u1;
+  }
+  &--u2 {
+    background-color: $u2;
+  }
+  &--u3 {
+    background-color: $u3;
+  }
+  &--u4 {
+    background-color: $u4;
+  }
+  &--u5 {
+    background-color: $u5;
+  }
+  &--u6 {
+    background-color: $u6;
+  }
+  &--u7 {
+    background: linear-gradient(to bottom right, $u2 0, $u2 50%, $u3 50%, $u3 100%);
+  }
+  &--u8 {
+    background: linear-gradient(to bottom right, $u1 0, $u1 50%, $u2 50%, $u2 100%);
+  }
+}

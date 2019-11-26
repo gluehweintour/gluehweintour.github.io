@@ -1,0 +1,55 @@
+---
+layout: base
+---
+{% include header.html %}
+<main class="page page__tour {% if page.class %}page__{{ page.class }}{% endif %}">
+  <div class="page__container">
+    <h1>{{ page.title }}</h1>
+
+    <div class="details">
+      <h2>Zusammenfassung</h2>
+
+      <p class="details__stops">
+        <strong>Stationen</strong>
+        {{ page.stops | default: 4 }}
+      </p>
+      <p class="details__participants">
+        <strong>Teilnehmer</strong>
+        Mind. {{ page.minParticipants | default: 6 }} Personen
+      </p>
+      <p class="details__meetingpoint">
+        <strong>Treffpunkt</strong>
+        {{ page.meetingPoint }}
+        {% if page.meetingTransport %}
+        {% assign transport = page.meetingTransport | split: ',' %}
+        <span class="details__transport">
+          {% for number in transport %}
+          <span class="mvv-line mvv-line--{{ number }}">{{ number }}</span>
+          {% endfor %}
+        </span>
+        {% endif %}
+      </p>
+      <p class="details__time">
+        <strong>Tageszeit</strong>
+        {{ page.time | default: 'Nachmittag / Abend' }}
+      </p>
+      <p class="details__transport">
+        <strong>Nahverkehr</strong>
+        {% case page.transport %}
+        {% when 0 %}
+        Nicht benötigt
+        {% when 1 %}
+        Eventuell kurze Fahrten
+        {% when 2 %}
+        Fahrten zwingend erforderlich
+        {% endcase %}
+      </p>
+    </div>
+
+    <div class="tour__description">
+      <h2>Was dich erwartet</h2>
+
+      {{ content }}
+    </div>
+  </div>
+</main> {% include footer.html %}

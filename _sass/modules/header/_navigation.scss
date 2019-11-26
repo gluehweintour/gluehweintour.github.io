@@ -77,6 +77,12 @@ ul.navigation {
         right: 1.25rem;
       }
 
+      &:hover {
+        > a {
+          font-weight: bold;
+        }
+      }
+
       ul {
         background-color: transparent;
         border: none;

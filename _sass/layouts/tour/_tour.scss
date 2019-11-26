@@ -1,0 +1,16 @@
+&__tour {
+  @import 'details';
+
+  .page__container {
+    @include outer-container;
+
+    h1,
+    .tour__description {
+      @include media-columns(12);
+    }
+
+    .details {
+      margin-bottom: 2rem;
+    }
+  }
+}

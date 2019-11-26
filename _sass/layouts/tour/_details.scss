@@ -1,0 +1,43 @@
+.details {
+  @include clearfix;
+
+  h2 {
+    @include media-columns(12);
+  }
+
+  p {
+    @include media-columns(12, 6);
+    
+    white-space: pre-wrap;
+
+    strong {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+
+      &::after {
+        content: ':';
+        padding-right: 0.5rem;
+      }
+    }
+
+    .details__transport {
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+
+    @include grid-media($mobile-only) {
+      &:not(:last-of-type) {
+        padding-bottom: 1rem;
+      }
+
+      strong {
+        display: block;
+      }
+
+      .details__transport {
+        display: block;
+        margin-left: 0;
+      }
+    }
+  }
+}
