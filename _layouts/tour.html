@@ -24,7 +24,7 @@ layout: base
         {% assign transport = page.meetingTransport | split: ',' %}
         <span class="details__transport">
           {% for number in transport %}
-          <span class="mvv-line mvv-line--{{ number }}">{{ number }}</span>
+          <span class="transportkit-munich transportkit-munich--{{ number }}">{{ number }}</span>
           {% endfor %}
         </span>
         {% endif %}

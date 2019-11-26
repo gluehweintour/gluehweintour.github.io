@@ -1,0 +1,32 @@
+&-munich {
+  @import "munich/colors";
+  @import "munich/bus";
+  @import "munich/tram";
+  @import "munich/sbahn";
+  @import "munich/ubahn";
+
+  border: 0.15625em solid transparent;
+  box-sizing: border-box;
+  color: $textLight;
+  display: inline-block;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 1.65625em;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0 0.46875em;
+  min-width: 3.125em;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+
+  &:not(:last-of-type) {
+    margin-bottom: 0.46875em;
+    margin-right: 0.46875em;
+  }
+
+  &--contrast {
+    border-color: $textLight;
+  }
+}

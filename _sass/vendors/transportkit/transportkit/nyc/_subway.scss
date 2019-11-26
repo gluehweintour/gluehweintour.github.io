@@ -1,0 +1,75 @@
+&--1,
+&--2,
+&--3 {
+  background-color: $subway123;
+}
+&--6d,
+&--7d {
+  border-radius: 0;
+  line-height: normal;
+  padding: 0;
+  position: relative;
+  z-index: 200;
+
+  &.transportkit-nyc--contrast {
+    border-color: transparent;
+
+    &::before {
+      border-color: $textLight;
+    }
+  }
+  
+  &::before {
+    border: 0.125em solid transparent;
+    box-sizing: content-box;
+    content: '';
+    height: 1.25em;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 1.25em;
+    left: 0;
+    top: -0.125em;
+    z-index: -1;
+  }
+}
+&--4,
+&--5,
+&--6,
+&--6d::before {
+  background-color: $subway456;
+}
+&--7,
+&--7d::before {
+  background-color: $subway7;
+}
+&--a,
+&--c,
+&--e {
+  background-color: $subwayACE;
+}
+&--b,
+&--d,
+&--f,
+&--m {
+  background-color: $subwayBDFM;
+}
+&--g {
+  background-color: $subwayG;
+}
+&--j,
+&--z {
+  background-color: $subwayJZ;
+}
+&--l {
+  background-color: $subwayL;
+}
+&--n,
+&--q,
+&--r,
+&--w {
+  background-color: $subwayNQRW;
+  color: $textDark;
+}
+&--s {
+  background-color: $subwayS;
+}

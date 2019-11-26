@@ -1,0 +1,35 @@
+&--u {
+  background-color: $u;
+}
+&--u1 {
+  background-color: $u1;
+}
+&--u2 {
+  background-color: $u2;
+}
+&--u3 {
+  background-color: $u3;
+}
+&--u4 {
+  background-color: $u4;
+}
+&--u5 {
+  background-color: $u5;
+}
+&--u6 {
+  background-color: $u6;
+}
+&--u7 {
+  border-bottom-color: $u3;
+  border-left-color: $u2;
+  border-right-color: $u3;
+  border-top-color: $u2;
+  background: linear-gradient(to bottom right, $u2 0, $u2 50%, $u3 50%, $u3 100%);
+}
+&--u8 {
+  border-bottom-color: $u2;
+  border-left-color: $u1;
+  border-right-color: $u2;
+  border-top-color: $u1;
+  background: linear-gradient(to bottom right, $u1 0, $u1 50%, $u2 50%, $u2 100%);
+}
