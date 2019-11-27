@@ -1,4 +1,10 @@
 .details {
+  .transportkit {
+    @import "../../vendors/transportkit/munich";
+    @import "../../vendors/transportkit/nuremberg";
+    @import "../../vendors/transportkit/regensburg";
+  }
+
   @include clearfix;
 
   h2 {

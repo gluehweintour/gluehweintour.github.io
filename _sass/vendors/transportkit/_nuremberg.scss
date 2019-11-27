@@ -1,0 +1,11 @@
+&-nuremberg {
+  @import "defaults/germany";
+
+  @import "nuremberg/colors";
+  @import "nuremberg/rbahn";
+  @import "nuremberg/sbahn";
+  @import "nuremberg/tram";
+  @import "nuremberg/ubahn";
+
+  font-family: Arial, Helvetica, sans-serif;
+}

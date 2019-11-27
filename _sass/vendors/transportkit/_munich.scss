@@ -1,10 +1,10 @@
-/*!
-TransportKit 0.2.0
-Copyright 2019 Manuel Schaechinger
-https://schaechinger.com/transportkit
-MIT License
-*/
+&-munich {
+  @import "defaults/germany";
 
-.transportkit {
-  @import "transportkit/munich";
+  @import "munich/colors";
+  @import "munich/fonts";
+  @import "munich/bus";
+  @import "munich/sbahn";
+  @import "munich/tram";
+  @import "munich/ubahn";
 }

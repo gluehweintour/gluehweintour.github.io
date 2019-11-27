@@ -1,20 +1,21 @@
-&-nyc {
-  @import "nyc/colors";
-  @import "nyc/subway";
+$textLight: #fff;
+$textDark: #000;
+$borderLight: #848484;
 
+$s: #006f35;
+
+& {
   border: 0.125em solid transparent;
-  border-radius: 10em;
-  box-sizing: content-box;
+  box-sizing: border-box;
   color: $textLight;
   display: inline-block;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1em;
   font-weight: bold;
-  line-height: 1.5em;
+  line-height: 1.25em;
   margin: 0;
   overflow-wrap: break-word;
-  padding: 0.0625em;
-  width: 1.5em;
+  padding: 0 0.25em;
+  min-width: 2.625em;
   text-align: center;
   text-size-adjust: 100%;
   text-transform: uppercase;

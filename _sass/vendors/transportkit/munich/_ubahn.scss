@@ -33,3 +33,9 @@
   border-top-color: $u1;
   background: linear-gradient(to bottom right, $u1 0, $u1 50%, $u2 50%, $u2 100%);
 }
+&--u7,
+&--u8 {
+  &.transportkit-munich--contrast {
+    border-color: $textLight;
+  }
+}

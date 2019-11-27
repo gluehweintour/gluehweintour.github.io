@@ -1,0 +1,69 @@
+&--tram {
+  background-color: $tram;
+}
+&--tram-peak {
+  background-color: $textLight;
+  color: $tram;
+  
+  &,
+  &.transportkit-munich--contrast {
+    border-color: $tram;
+  }
+}
+&--tram12 {
+  background-color: $tram12;
+}
+&--tram15 {
+  background-color: $textLight;
+  color: $tram25;
+  
+  &,
+  &.transportkit-munich--contrast {
+    border-color: $tram25;
+  }
+}
+&--tram16 {
+  background-color: $tram16;
+}
+&--tram17 {
+  background-color: $tram17;
+}
+&--tram18 {
+  background-color: $tram18;
+}
+&--tram19 {
+  background-color: $tram19;
+}
+&--tram20 {
+  background-color: $tram20;
+}
+&--tram21 {
+  background-color: $tram21;
+}
+&--tram22 {
+  background-color: $textLight;
+  color: $tram20;
+
+  &,
+  &.transportkit-munich--contrast {
+    border-color: $tram20;
+  }
+}
+&--tram23 {
+  background-color: $tram23;
+}
+&--tram25 {
+  background-color: $tram25;
+}
+&--tram27 {
+  background-color: $tram27;
+}
+&--tram28 {
+  background-color: $textLight;
+  color: $tram27;
+
+  &,
+  &.transportkit-munich--contrast {
+    border-color: $tram27;
+  }
+}
