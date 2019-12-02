@@ -21,7 +21,7 @@
     border-bottom-width: 0;
     background-color: $white-transparent;
     position: absolute;
-    top: 100%;
+    bottom: 0%;
     width: 100%;
   }
 
@@ -84,21 +84,11 @@ body.page:not(.consent-accepted) {
     main .glyphicons {
       top: calc(100% - 10rem);
     }
-    footer {
-      margin-bottom: 8rem;
-    }
   }
   @include grid-media($tablet) {
     main .glyphicons {
       top: calc(100% - 8rem);
     }
-    footer {
-      margin-bottom: 5rem;
-    }
   }
-  @include grid-media($desktop) {
-    footer {
-      margin-bottom: 3rem;
-    }
-  }
+
 }
