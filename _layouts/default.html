@@ -58,6 +58,8 @@
 
       if (!accepted) {
         document.getElementById("consent").classList.add('consent--pending');
+      } else {
+        document.getElementsByTagName("body")[0].classList.add('consent-accepted');
       }
 
       return accepted;
@@ -69,6 +71,7 @@
       var value = 'YES+de+' + new Date().toISOString() + '+1';
       document.cookie = window.cookieStringCn + '=' + value + '; expires=' + date.toUTCString() + '; path=/';
       document.getElementById("consent").classList.add('consent--fade-out');
+      document.getElementsByTagName("body")[0].classList.add('consent-accepted');
       window[window.cookieStringCn] = true;
 
       return false;

@@ -1,0 +1,51 @@
+ul.socials {
+  color: $gray;
+
+  li {
+    display: inline-block;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      margin: 0.5em;
+      position: relative;
+
+      &::before {
+        background-color: transparent;
+        border-radius: 50%;
+        content: "";
+        height: 1.75em;
+        left: calc(50% - 0.875em);
+        position: absolute;
+        top: calc(50% - 0.95em);
+        transition: background 0.333s ease-in-out;
+        width: 1.75em;
+      }
+
+      &.facebook {
+        color: $facebook;
+      }
+      &.instagram {
+        color: $instagram;
+      }
+      &.twitter {
+        color: $twitter;
+      }
+
+      &:hover {
+        border-bottom-color: transparent;
+        color: $white !important;
+
+        &.facebook::before {
+          background-color: $facebook;
+        }
+        &.instagram::before {
+          background-color: $instagram;
+        }
+        &.twitter::before {
+          background-color: $twitter;
+        }
+      }
+    }
+  }
+}

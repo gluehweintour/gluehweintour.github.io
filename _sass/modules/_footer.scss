@@ -1,13 +1,24 @@
-footer.footer {
-  padding: 1rem 0;
+footer {
+  border-top: 1px solid $gray-middle;
+  display: block;
+  position: relative;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
 
-  p,
-  ul {
-    display: inline-block;
-  }
+.footer {
+  @include outer-container;
 
-  p {
-    margin: 0;
+  &__content {
+    @include media-columns(12, 8, 9);
+
+    ul {
+      display: block;
+    }
+
+    p {
+      margin: 0;
+    }
   }
 
   ul {
@@ -18,6 +29,50 @@ footer.footer {
     li {
       display: inline-block;
       padding-right: 0.5rem;
+    }
+  }
+
+  &__socials {
+    @include media-columns(12, 4, 3);
+
+    .socials {
+      font-size: 1.5rem;
+      text-align: right;
+    }
+  }
+
+  @include grid-media($mobile-only) {
+    &__socials .socials {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    &__content {
+      text-align: center;
+
+      li:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+
+  @include grid-media($tablet) {
+    &__content {
+      @include grid-shift(-4);
+    }
+
+    &__socials {
+      @include grid-shift(8);
+    }
+  }
+
+  @include grid-media($desktop) {
+    &__content {
+      @include grid-shift(-3);
+    }
+
+    &__socials {
+      @include grid-shift(9);
     }
   }
 }

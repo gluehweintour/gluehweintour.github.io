@@ -1,13 +1,13 @@
 .page.page-home {
   .logo,
-  .footer {
+  footer {
     background-color: $white-transparent;
     border: 1px solid $gray-middle;
     margin: 0 auto;
     width: 50%;
     max-width: 100%;
   }
-  
+
   header {
     border-bottom: none;
 
@@ -16,17 +16,22 @@
       padding: 1.75rem 1rem;
     }
   }
-  
-  .footer {
+
+  footer {
     border-bottom-width: 0;
     background-color: $white-transparent;
+    position: absolute;
+    top: 100%;
+    width: 100%;
   }
 
-
   @include grid-media($mobile-only) {
-    .footer,
     .logo {
       width: 100%;
+    }
+
+    footer {
+      padding-top: 1rem;
     }
   }
 
@@ -40,16 +45,16 @@
       bottom: 0;
       height: 100%;
       z-index: -1;
-      
+
       &.image-left {
         left: 0;
-        background-image: url('/assets/images/igi-und-manuel.jpg');
+        background-image: url("/assets/images/igi-und-manuel.jpg");
         width: 75%;
       }
-      
+
       &.image-right {
         right: 0;
-        background-image: url('/assets/images/feuerzangenbowle.jpg');
+        background-image: url("/assets/images/feuerzangenbowle.jpg");
         width: 25%;
       }
 
@@ -63,13 +68,38 @@
         }
       }
     }
-  }
 
-  .footer {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
+    .glyphicons {
+      color: $white;
+      font-size: 2rem;
+      position: absolute;
+      top: calc(100% - 3rem);
+      transition: top 0.25s ease-in-out;
+      left: calc(50% - 1.25rem);
+    }
+  }
+}
+
+body.page:not(.consent-accepted) {
+  @include grid-media($mobile-only) {
+    main .glyphicons {
+      top: calc(100% - 10rem);
+    }
+    footer {
+      margin-bottom: 8rem;
+    }
+  }
+  @include grid-media($tablet) {
+    main .glyphicons {
+      top: calc(100% - 8rem);
+    }
+    footer {
+      margin-bottom: 5rem;
+    }
+  }
+  @include grid-media($desktop) {
+    footer {
+      margin-bottom: 3rem;
+    }
   }
 }
