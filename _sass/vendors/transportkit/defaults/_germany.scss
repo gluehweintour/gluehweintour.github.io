@@ -1,0 +1,24 @@
+$textLight: #fff;
+$textDark: #111;
+$borderLight: #848484;
+
+$s: #006f35;
+
+& {
+  @import "global";
+
+  border: 0.125em solid transparent;
+  box-sizing: border-box;
+  color: $textLight;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.25em;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0 0.25em;
+  min-width: 2.625em;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+}

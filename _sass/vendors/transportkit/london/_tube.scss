@@ -1,0 +1,26 @@
+$tubeLines: (
+  'bakerloo': $tubeBakerloo,
+  'central': $tubeCentral,
+  'circle': $tubeCircle,
+  'district': $tubeDistrict,
+  'hammersmith': $tubeHammersmith,
+  'jubilee': $tubeJubilee,
+  'metropolitan': $tubeMetropolitan,
+  'northern': $tubeNorthern,
+  'piccadilly': $tubePiccadilly,
+  'victoria': $tubeVictoria,
+  'waterloo': $tubeWaterloo
+);
+
+@each $line, $color in $tubeLines {
+  @include backgroundLine($line, $color);
+}
+
+&--hammersmith {
+  color: $tubePiccadilly;
+}
+&--circle,
+&--victoria,
+&--waterloo {
+  color: $textDark;
+}

@@ -1,0 +1,44 @@
+// styles a line with a distict background color
+@mixin backgroundLine($line, $color) {
+  &--#{str-replace($line)} {
+    background-color: $color;
+  }
+}
+
+// styles a line with colored text and border
+@mixin flipLine($line, $color, $city) {
+  &--#{str-replace($line)} {
+    background-color: $textLight;
+    color: $color;
+
+    &,
+    &.transportkit-#{$city}--contrast {
+      border-color: $color;
+    }
+  }
+}
+
+// styles a line that combines two lines diagonal
+@mixin splitLine($line, $topColor, $bottomColor, $city) {
+  &--#{$line} {
+    border-bottom-color: $bottomColor;
+    border-left-color: $topColor;
+    border-right-color: $bottomColor;
+    border-top-color: $topColor;
+    background: linear-gradient(to bottom right, $topColor 0, $topColor 50%, $bottomColor 50%, $bottomColor 100%);
+
+    &.transportkit-#{$city}--contrast {
+      border-color: $textLight;
+    }
+  }
+}
+
+@function str-replace($string, $search: ',', $replace: ',&--') {
+  $index: str-index($string, $search);
+  
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  
+  @return $string;
+}

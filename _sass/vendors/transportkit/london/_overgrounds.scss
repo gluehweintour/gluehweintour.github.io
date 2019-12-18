@@ -1,0 +1,10 @@
+$overgroundLines: (
+  'overground': $overground,
+  'tflrail': $tflRail,
+  'dlr': $dlr,
+  'tram,t': $t
+);
+
+@each $line, $color in $overgroundLines {
+  @include backgroundLine($line, $color);
+}

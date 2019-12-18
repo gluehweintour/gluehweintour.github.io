@@ -1,0 +1,28 @@
+&-london {
+  @import "mixins/line";
+
+  @import "london/colors";
+  @import "defaults/global";
+
+  @import "london/airline";
+  @import "london/bus";
+  @import "london/overgrounds";
+  @import "london/riverbus";
+  @import "london/tube";
+  
+  border: 0.15625em solid transparent;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  color: $textLight;
+  display: inline-block;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0 0.46875em;
+  min-width: 8em;
+  text-align: center;
+  text-size-adjust: 100%;
+}

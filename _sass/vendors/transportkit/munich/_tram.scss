@@ -1,0 +1,27 @@
+$tLines: (
+  "tram,t": $t,
+  "t12": $t12,
+  "t16": $t16,
+  "t17,tn17": $t17,
+  "t18": $t18,
+  "t19,tn19": $t19,
+  "t20,tn20": $t20,
+  "t21": $t21,
+  "t23": $t23,
+  "t25": $t25,
+  "t27,tn27": $t27
+);
+$tFlipLines: (
+  "tram-peak,tp": $t,
+  "t15": $t25,
+  "t22": $t20,
+  "t28": $t27
+);
+
+@each $line, $color in $tLines {
+  @include backgroundLine($line, $color);
+}
+
+@each $line, $color in $tFlipLines {
+  @include flipLine($line, $color, "munich");
+}

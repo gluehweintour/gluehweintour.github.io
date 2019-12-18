@@ -1,0 +1,22 @@
+$sLines: (
+  's': $s,
+  's1': $s1,
+  's2,s25,s26': $s2,
+  's3': $s3,
+  's41,s45': $s41,
+  's42': $s42,
+  's46,s47': $s46,
+  's5': $s5,
+  's7,s75': $s7,
+  's8,s85': $s8,
+  's9': $s9
+);
+
+@each $line, $color in $sLines {
+  @include backgroundLine($line, $color);
+}
+
+&[class*="--s"] {
+  border-radius: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

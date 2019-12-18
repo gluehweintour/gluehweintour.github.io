@@ -1,0 +1,33 @@
+$oLines: (
+  'o1': $o1,
+  'o2': $o2,
+  'o3': $o3,
+  'o4': $o4,
+  'o5': $o5,
+  'o6': $o6,
+  'o7': $o7,
+  'o8': $o8,
+  'o9': $o9,
+  'o10': $o10,
+  'o12': $o12,
+  'o14': $o14
+);
+
+@each $line, $color in $oLines {
+  @include backgroundLine($line, $color);
+}
+
+&[class*="--o"] {
+  border-width: 0.1em;
+  font-size: 1.25em;
+  line-height: 1em;
+  min-width: 1.25em;
+  padding: 0;
+}
+
+&--o4,
+&--o10,
+&--o12,
+&--o14 {
+  color: $textDark;
+}

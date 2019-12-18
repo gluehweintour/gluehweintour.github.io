@@ -1,0 +1,19 @@
+$sLines: (
+  's1': $s1,
+  's2': $s2,
+  's3': $s3,
+  's4': $s4
+);
+
+@each $line, $color in $sLines {
+  @include backgroundLine($line, $color);
+}
+
+&[class*="--s"] {
+  border-radius: 0.5em;
+  border-width: 0.1em;
+  font-size: 1.25rem;
+  line-height: 1em;
+  min-width: 2em;
+  padding: 0;
+}

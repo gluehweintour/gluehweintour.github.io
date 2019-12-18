@@ -1,0 +1,11 @@
+$sLines: (
+  's,s1,s2,s3,s4': $s
+);
+
+@each $line, $color in $sLines {
+  @include backgroundLine($line, $color);
+}
+
+&[class*="--s"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,7 @@
+$aLines: (
+  'a,aemirates': $cEmirates
+);
+
+@each $line, $color in $aLines {
+  @include backgroundLine($line, $color);
+}

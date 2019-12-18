@@ -1,0 +1,10 @@
+& {
+  &:not(:last-of-type) {
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  &--contrast {
+    border-color: $textLight;
+  }
+}

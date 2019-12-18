@@ -1,0 +1,52 @@
+$subwayLines: (
+  "1,2,3": $subway123,
+  "4,5,6,6d::before": $subway456,
+  "7,7d::before": $subway7,
+  "a,c,e": $subwayACE,
+  "b,d,f,m": $subwayBDFM,
+  "g": $subwayG,
+  "j,z": $subwayJZ,
+  "l": $subwayL,
+  "s": $subwayS,
+  "n,q,r,w": $subwayNQRW
+);
+
+@each $line, $color in $subwayLines {
+  @include backgroundLine($line, $color);
+}
+
+&--6d,
+&--7d {
+  border-radius: 0;
+  line-height: normal;
+  padding: 0;
+  position: relative;
+  z-index: 200;
+
+  &.transportkit-nyc--contrast {
+    border-color: transparent;
+
+    &::before {
+      border-color: $textLight;
+    }
+  }
+
+  &::before {
+    border: 0.125em solid transparent;
+    box-sizing: content-box;
+    content: "";
+    height: 1.25em;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 1.25em;
+    left: 0;
+    top: -0.125em;
+    z-index: -1;
+  }
+}
+&--n,
+&--q,
+&--r,
+&--w {
+  color: $textDark;
+}

@@ -1,0 +1,16 @@
+$uLines: (
+  'u': $u,
+  'u1': $u1,
+  'u2': $u2,
+  'u3': $u3,
+  'u4': $u4,
+  'u5': $u5,
+  'u6': $u6
+);
+
+@each $line, $color in $uLines {
+  @include backgroundLine($line, $color);
+}
+
+@include splitLine('u7', $u1, $u2, 'munich');
+@include splitLine('u8', $u2, $u3, 'munich');

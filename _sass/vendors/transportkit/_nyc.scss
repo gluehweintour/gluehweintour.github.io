@@ -1,0 +1,25 @@
+&-nyc {
+  @import "mixins/line";
+
+  @import "nyc/colors";
+  @import "defaults/global";
+
+  @import "nyc/subway";
+
+  border: 0.125em solid transparent;
+  border-radius: 10em;
+  box-sizing: content-box;
+  color: $textLight;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0;
+  overflow-wrap: break-word;
+  padding: 0.0625em;
+  width: 1.5em;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+}

@@ -1,0 +1,12 @@
+&-munich {
+  @import "mixins/line";
+
+  @import "defaults/germany";
+  @import "munich/colors";
+  @import "munich/fonts";
+
+  @import "munich/bus";
+  @import "munich/sbahn";
+  @import "munich/tram";
+  @import "munich/ubahn";
+}

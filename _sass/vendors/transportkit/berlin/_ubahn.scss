@@ -1,0 +1,20 @@
+$sLines: (
+  'u': $u,
+  'u1': $u1,
+  'u2': $u2,
+  'u3': $u3,
+  'u4': $u4,
+  'u5,u55': $u5,
+  'u6': $u6,
+  'u7': $u7,
+  'u8': $u8,
+  'u9': $u9
+);
+
+@each $line, $color in $sLines {
+  @include backgroundLine($line, $color);
+}
+
+&--u4 {
+  color: $textDark;
+}

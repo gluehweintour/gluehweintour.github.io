@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +10,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="author" content="Manuel Schächinger">
   <meta name="author" content="Ignaz Schlennert">
-  <meta name="description" content="Glühweintouren in und um München">
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <link href="https://fonts.googleapis.com/css?family=Kite+One|Open+Sans" rel="stylesheet">
   <link href="/assets/css/style.css?gc={{ site.github.build_revision }}" rel="stylesheet">
 </head>

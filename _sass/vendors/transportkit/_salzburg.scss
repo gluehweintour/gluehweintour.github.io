@@ -1,0 +1,12 @@
+&-salzburg {
+  @import "mixins/line";
+
+  @import "defaults/germany";
+  @import "salzburg/colors";
+
+  @import "salzburg/bus";
+  @import "salzburg/obus";
+  @import "salzburg/sbahn";
+
+  font-family: "Open Sans", sans-serif;
+}

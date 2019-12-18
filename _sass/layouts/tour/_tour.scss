@@ -1,0 +1,27 @@
+.page.page-tour {
+  @import "dates";
+  @import "details";
+
+  .transportkit {
+    @import "../../vendors/transportkit/munich";
+  }
+
+  .page__container {
+    @include outer-container;
+
+    h1,
+    .tour__description {
+      @include media-columns(12);
+    }
+
+    .dates,
+    .details {
+      margin-bottom: 2rem;
+    }
+
+    ul.list {
+      list-style-type: disc;
+      margin: 0 0 1.25rem 1.25rem;
+    }
+  }
+}

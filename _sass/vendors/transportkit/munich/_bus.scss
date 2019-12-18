@@ -1,0 +1,16 @@
+$bLines: (
+  "bus,b,bus-night,busn,bn": $b,
+  "bus-express,busx,bx": $bX,
+  "bus-metro,busm,bm": $bM
+);
+$bFlipLines: (
+  "bus-night-weekend,busnw,bnw": $b
+);
+
+@each $line, $color in $bLines {
+  @include backgroundLine($line, $color);
+}
+
+@each $line, $color in $bFlipLines {
+  @include flipLine($line, $color, "munich");
+}

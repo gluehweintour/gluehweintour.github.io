@@ -1,0 +1,12 @@
+&-regensburg {
+  @import "mixins/line";
+
+  @import "defaults/germany";
+  @import "regensburg/colors";
+
+  @import "regensburg/bus";
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  min-width: 1.5em !important;
+  padding: 0 0.0625em !important;
+}

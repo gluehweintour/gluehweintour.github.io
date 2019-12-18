@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="page__container">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.date %}
+  <div class="dates">
+    <h2>Nächster Termin</h2>
+    <p>Die nächste Tour startet am <strong>{{page.date}}</strong>!</p>
+    {% if page.fbevent %}
+    <p>
+      {% include glyphicons.html icon="1-facebook" type="social" %}
+      <a href="https://www.facebook.com/events/{{ page.fbevent }}/" target="_blank">
+        Zum Event</a>
+    </p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="details">
+    <h2>Zusammenfassung</h2>
+
+    <p class="details__stops">
+      <strong>Stationen</strong>
+      {{ page.stops | default: 4 }}
+    </p>
+    <p class="details__price">
+      <strong>Preis / Eintritt</strong>
+      {% if page.price %}
+      {{ page.price }} &euro;
+      {% else %}
+      Kostenlos
+      {% endif %}
+    </p>
+    {% comment %}
+    <p class="details__participants">
+      <strong>Teilnehmer</strong>
+      {% if page.minParticipants %}
+      Mind. {{ page.minParticipants | default: 6 }} Personen
+      {% else %}
+      Beliebige Anzahl
+      {% endif %}
+    </p>
+    {% endcomment %}
+    <p class="details__meetingpoint">
+      <strong>Treffpunkt</strong>
+      {{ page.meetingPoint }}
+      {% if page.meetingTransport %}
+      {% assign transport = page.meetingTransport | split: ',' %}
+      <span class="details__transport">
+        {% for number in transport %}
+        <span class="transportkit-munich transportkit-munich--{{ number }}">{{ number }}</span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </p>
+    <p class="details__time">
+      <strong>Tageszeit</strong>
+      {{ page.time | default: 'Nachmittag / Abend' }}
+    </p>
+    <p class="details__transport">
+      <strong>Nahverkehr</strong>
+      {% case page.transport %}
+      {% when 0 %}
+      Nicht benötigt
+      {% when 1 %}
+      Eventuell kurze Fahrten
+      {% when 2 %}
+      Fahrten zwingend erforderlich
+      {% endcase %}
+    </p>
+  </div>
+
+  <div class="tour__description">
+    <h2>Was Dich erwartet</h2>
+
+    {{ content }}
+  </div>
+</div>

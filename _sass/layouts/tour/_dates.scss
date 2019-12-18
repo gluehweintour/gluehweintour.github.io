@@ -1,0 +1,21 @@
+.dates {
+  @include clearfix;
+
+  h2 {
+    @include media-columns(12);
+  }
+
+  p {
+    @include media-columns(12);
+
+    .glyphicons {
+      font-size: 1.5rem;
+      position: relative;
+      top: 0.5rem;
+
+      &-facebook {
+        color: $facebook;
+      }
+    }
+  }
+}

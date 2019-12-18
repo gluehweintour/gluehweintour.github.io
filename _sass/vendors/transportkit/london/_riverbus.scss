@@ -1,0 +1,23 @@
+$rbLines: (
+  'rbwoolwich': $rbWoolwich,
+  'rb1': $rb1,
+  'rb1x': $rb1x,
+  'rb2': $rb2,
+  'rb4': $rb4,
+  'rb5': $rb5,
+  'rb6': $rb6,
+);
+
+@each $line, $color in $rbLines {
+  @include backgroundLine($line, $color);
+}
+
+&--rbWoolwich,
+&--rb5 {
+  color: $textDark;
+}
+
+&--b,
+&[class*="--rb"] {
+  min-width: auto;
+}
